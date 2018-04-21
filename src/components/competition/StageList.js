@@ -1,18 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const StageList = ({ latestMatchDay, numberOfMatchDay,handleOnChange }) => {
+const StageList = ({ latestMatchDay, numberOfMatchDay, handleOnChange }) => {
     var optionList = [];
+
+    // first element selected
+    // optionList.push(
+    //     <option key={latestMatchDay - 1} value={latestMatchDay} selected>MatchDay {latestMatchDay} of {numberOfMatchDay}</option>
+    // );
+
     for (var i = latestMatchDay; i > 0; i--) {
         optionList.push(
-            <option key={i-1} value={i}>MatchDay {i} of {numberOfMatchDay}</option>
+            <option key={i - 1} value={i}>MatchDay {i} of {numberOfMatchDay}</option>
         );
     }
+    
     return (
         <div>
             <select className="form-control"
                 id="sel1"
-                onChange={handleOnChange}>
+                onChange={handleOnChange}
+                defaultValue={latestMatchDay}>
                 {optionList}
             </select>
         </div>

@@ -45,14 +45,14 @@ class MatchApi {
     }
     // Function requiring testing - END
 
-    static getCompetition(competition) {
+    static getCompetitionAsync(competition) {
         return new Promise((resolve, reject) => {
             getBodyAsJson(this.getUrlCompetition(competition)).then(competition => { resolve(Object.assign([], competition)); })
             .catch(error => { return reject(error); });
         });
     }
 
-    static getCompetitionMatches(competition, matchDay) {
+    static getMatchesAsync(competition, matchDay) {
         return new Promise((resolve, reject) => {
             getBodyAsJson(this.getUrlMatches(competition, matchDay)).then(matchesObj => {
                 matchesObj.fixtures.map(match => match.id = this.getMatchId(match));
@@ -62,7 +62,7 @@ class MatchApi {
         });
     }
 
-    static getCompetitionStandings(competition) {
+    static getStandingsAsync(competition) {
         return new Promise((resolve, reject) => {
             getBodyAsJson(this.getUrlStandings(competition)).then(standingObj => { resolve(Object.assign([], standingObj.standing)); })
             .catch(error => { return reject(error); });

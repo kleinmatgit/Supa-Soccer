@@ -46,7 +46,7 @@ class CompetitionPage extends React.Component {
 
   handleClickCompetition(competition) {
 
-    MatchApi.getCompetition(competition).then(competitionObj => {
+    MatchApi.getCompetitionAsync(competition).then(competitionObj => {
 
       this.setState({
         currentMatchDay: competitionObj.currentMatchday,
@@ -54,7 +54,7 @@ class CompetitionPage extends React.Component {
         numberOfMatchDay: competitionObj.numberOfMatchdays
       });
 
-      MatchApi.getCompetitionMatches(competition, this.state.currentMatchDay).then(matches => {
+      MatchApi.getMatchesAsync(competition, this.state.currentMatchDay).then(matches => {
         this.setState({
           competition,
           matches,
@@ -63,7 +63,7 @@ class CompetitionPage extends React.Component {
       }).catch(error => { this.handleError(error); });
     }).catch(error => { this.handleError(error); });
 
-    MatchApi.getCompetitionStandings(competition).then(standings => {
+    MatchApi.getStandingsAsync(competition).then(standings => {
       this.setState({
         standings
       });
@@ -96,7 +96,7 @@ class CompetitionPage extends React.Component {
       currentMatchDay: newCurrentMatchDay
     });
 
-    MatchApi.getCompetitionMatches(this.state.competition, newCurrentMatchDay).then(matches => {
+    MatchApi.getMatchesAsync(this.state.competition, newCurrentMatchDay).then(matches => {
       this.setState({
         matches
       });
