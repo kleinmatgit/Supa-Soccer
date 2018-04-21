@@ -2,9 +2,7 @@ import React from 'react';
 import MatchArea from './MatchArea';
 import StandingList from './StandingList';
 import ErrorArea from './ErrorArea';
-import MatchApi from '../../api/matchApi';
-// import mockMatchApi from '../../api/mockMatchApi';
-// import StandingApi from '../../api/standingApi';
+import MatchApi from '../../api/mockMatchApi';
 import * as comp from '../../constants/competitions';
 
 const MATCH_MODE = 0;
