@@ -2,8 +2,8 @@ import React from 'react';
 import MatchArea from './MatchArea';
 import StandingList from './StandingList';
 import ErrorArea from './ErrorArea';
-import MatchApi from '../../api/mockMatchApi';
-import * as comp from '../../constants/competitions';
+import MatchApi from '../api/mockMatchApi';
+import * as comp from '../constants/competitions';
 
 const MATCH_MODE = 0;
 const STANDING_MODE = 1;
@@ -100,19 +100,19 @@ class CompetitionPage extends React.Component {
       this.setState({
         matches
       });
-    }).catch(error => { this.handleError(error); });    
+    }).catch(error => { this.handleError(error); });
   }
-  
+
   handleClickLigue1() { this.handleClickCompetition(comp.LIGUE1); }
   handleClickLaLiga() { this.handleClickCompetition(comp.LALIGA); }
   handleClickSerieA() { this.handleClickCompetition(comp.SERIEA); }
   handleClickBundesliga() { this.handleClickCompetition(comp.BUNDESLIGA); }
   handleClickPremierLeague() { this.handleClickCompetition(comp.PREMIER_LEAGUE); }
-  
+
   render() {
     return (
       <div>
-        <nav>
+        <nav class="">
           <button
             onClick={this.handleClickLigue1}
             className="btn btn-primary btn-lg">{comp.LIGUE1}</button>
@@ -148,9 +148,9 @@ class CompetitionPage extends React.Component {
           ? <ErrorArea error={this.state.error} />
           : this.state.mode === MATCH_MODE
             ? <MatchArea matches={this.state.matches}
-                latestMatchDay={this.state.latestMatchDay}
-                numberOfMatchDay={this.state.numberOfMatchDay}
-                handleOnChange={this.handleChangeStage} />
+              latestMatchDay={this.state.latestMatchDay}
+              numberOfMatchDay={this.state.numberOfMatchDay}
+              handleOnChange={this.handleChangeStage} />
             : <StandingList standings={this.state.standings} />
         }
       </div>

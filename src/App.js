@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import CompetitionPage from './components/competition/CompetitionPage';
+import CompetitionPage from './components/CompetitionPage';
 
 class App extends Component {
   render() {
