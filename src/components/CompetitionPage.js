@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import MatchArea from './MatchArea';
 import StandingList from './StandingList';
 import ErrorArea from './ErrorArea';
@@ -32,6 +33,14 @@ class CompetitionPage extends React.Component {
     this.handleClickSerieA = this.handleClickSerieA.bind(this);
     this.handleClickBundesliga = this.handleClickBundesliga.bind(this);
     this.handleClickPremierLeague = this.handleClickPremierLeague.bind(this);
+
+    this.compFunc = {
+      'Ligue 1': {id: 0, func: this.handleClickLigue1},
+      'LaLiga': {id: 1, func: this.handleClickLaLiga},
+      'Serie A': {id: 2, func: this.handleClickSerieA},
+      'Bundesliga': {id: 3, func: this.handleClickBundesliga},
+      'Premier League': {id: 4, func: this.handleClickPremierLeague}
+    };
 
     this.handleClickMatches = this.handleClickMatches.bind(this);
     this.handleClickStandings = this.handleClickStandings.bind(this);
@@ -111,8 +120,9 @@ class CompetitionPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <nav class="">
+    <div>
+        <Header competitionFunc={this.compFunc} />
+        {/* <nav>
           <button
             onClick={this.handleClickLigue1}
             className="btn btn-primary btn-lg">{comp.LIGUE1}</button>
@@ -132,7 +142,7 @@ class CompetitionPage extends React.Component {
           <button
             onClick={this.handleClickPremierLeague}
             className="btn btn-primary btn-lg">{comp.PREMIER_LEAGUE}</button>
-        </nav>
+        </nav> */}
         <br />
         <nav>
           <button
