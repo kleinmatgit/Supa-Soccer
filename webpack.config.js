@@ -16,7 +16,13 @@ const config = {
     rules: [
       {test: /\.js$/, exclude: /node_modules/, use: 'babel-loader'}
     ]
-  }
+  },
+  node: {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
 };
 
 module.exports = config;
