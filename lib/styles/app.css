@@ -1,0 +1,70 @@
+/* Main components */
+
+.competition-area {
+  margin: auto;
+  max-width: 1200px;
+  border: 1px solid red;
+  padding: .5em .5em;
+}
+
+/* Competition Title */
+
+.competition-title {
+  text-align: center;
+  border: 1px solid blue;
+}
+
+/* Competition Buttons (Matches/Standings/etc) */
+.competition-buttons {
+  margin: auto;
+  width: 500px;
+  border: 1px solid blue;
+}
+
+.competition-buttons-single-btn {
+  width: 150px;
+}
+
+.competition-buttons-btn-center {
+  width: 150px;
+  margin: 0 24px;
+}
+
+/* data area */
+.competition-data-area {
+  margin-top: 10px;
+  border: 1px solid blue;
+  padding: .5em .5em;
+}
+
+/* match area */
+.match-stage-list {
+  margin: auto;
+  width: 180px;
+  border: 1px solid green;
+}
+
+.match-data {
+  border: 1px solid green;
+  padding: .5em .5em;
+}
+
+.match-card {
+  border: 1px solid grey;
+  padding: .5em .5em;
+  margin-bottom: .5em;
+  width: 400px;
+}
+
+.match-card-teams {
+  border: 1px solid darkgrey;
+  padding: .2em .2em;
+  width: 300px;
+}
+
+.match-card-scores {
+  border: 1px solid darkgrey;
+  padding: .2em .2em;
+  text-align: right;
+  width: 100px;
+}
