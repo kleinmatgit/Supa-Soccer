@@ -17,7 +17,7 @@
 /* Competition Buttons (Matches/Standings/etc) */
 .competition-buttons {
   margin: auto;
-  width: 500px;
+  width: 450px;
   border: 1px solid blue;
 }
 
@@ -27,7 +27,6 @@
 
 .competition-buttons-btn-center {
   width: 150px;
-  margin: 0 24px;
 }
 
 /* data area */
@@ -67,4 +66,12 @@
   padding: .2em .2em;
   text-align: right;
   width: 100px;
+}
+
+/* standings area */
+.standings-data {
+  margin: auto;
+  max-width: 600px;
+  border: 1px solid green;
+  padding: .5em .5em;
 }
