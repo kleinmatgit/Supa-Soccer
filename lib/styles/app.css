@@ -68,6 +68,11 @@
   width: 100px;
 }
 
+/* team image css common to matches/standings.. */
+.team-img {
+  width: 24px;
+}
+
 /* standings area */
 .standings-data {
   margin: auto;
