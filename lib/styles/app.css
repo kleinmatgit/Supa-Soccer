@@ -60,20 +60,51 @@
   border: 1px solid grey;
   padding: .5em .5em;
   margin-bottom: .5em;
-  width: 400px;
+  width: 500px;
+}
+
+.match-card-table {
+  display: inline-block;
+  border: 1px solid darkgrey;
 }
 
 .match-card-teams {
-  border: 1px solid darkgrey;
   padding: .2em .2em;
-  width: 300px;
+  width: 150px;
 }
 
 .match-card-scores {
-  border: 1px solid darkgrey;
   padding: .2em .2em;
   text-align: right;
   width: 100px;
+}
+
+.team-winner {
+  font-weight: bold;
+}
+
+.score-winner {
+  font-weight: bold;
+}
+
+.vertical-line {
+  border-left: thick solid #ff0000;
+}
+
+.match-card-details {
+  border: 1px solid darkgrey;
+  text-align: center;
+}
+
+.match-card-details-status {
+  /* display: inline-block;
+  text-align: center;
+  border: 1px solid darkgrey;
+  /* width: 100px; */
+}
+
+.match-card-details-date {
+  /* border: 1px solid darkgrey; */
 }
 
 /* team image css common to matches/standings.. */
