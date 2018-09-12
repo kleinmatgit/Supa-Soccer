@@ -9,9 +9,17 @@
 
 /* Competition Title */
 
-.competition-title {
+.competition-title-area {
   text-align: center;
   border: 1px solid blue;
+}
+
+.competition-title-logo {
+  display: inline-block;
+}
+
+.competition-title-text {
+  display: inline-block;
 }
 
 /* Competition Buttons (Matches/Standings/etc) */
