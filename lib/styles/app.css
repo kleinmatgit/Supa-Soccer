@@ -25,15 +25,11 @@
 /* Competition Buttons (Matches/Standings/etc) */
 .competition-buttons {
   margin: auto;
-  width: 450px;
+  width: 302px;
   border: 1px solid blue;
 }
 
 .competition-buttons-single-btn {
-  width: 150px;
-}
-
-.competition-buttons-btn-center {
   width: 150px;
 }
 
@@ -52,31 +48,35 @@
 }
 
 .match-data {
+  margin: auto;
+  max-width: 800px;
   border: 1px solid green;
   padding: .5em .5em;
 }
 
 .match-card {
+  /* margin-left: auto;
+  margin-right: auto;
+  max-width: 300px; */
   border: 1px solid grey;
-  padding: .5em .5em;
+  /* padding: .5em .5em; */
   margin-bottom: .5em;
-  width: 500px;
 }
 
 .match-card-table {
   display: inline-block;
-  border: 1px solid darkgrey;
+  border: 1px solid cyan;
 }
 
 .match-card-teams {
-  padding: .2em .2em;
-  width: 150px;
+  /* padding: .2em .2em; */
+  /* width: 150px; */
 }
 
 .match-card-scores {
-  padding: .2em .2em;
-  text-align: right;
-  width: 100px;
+  /* padding: .2em .2em; */
+  /* text-align: right; */
+  /* width: 100px; */
 }
 
 .team-winner {
@@ -92,7 +92,7 @@
 }
 
 .match-card-details {
-  border: 1px solid darkgrey;
+  border: 1px solid cyan;
   text-align: center;
 }
 
