@@ -1,3 +1,27 @@
+/* Header */
+
+.custom-navbar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.custom-navbar>ul>li {
+    float: left;
+}
+
+.custom-navbar>ul>li img {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 60px;
+}
+
 /* Main components */
 
 .competition-area {
@@ -18,8 +42,9 @@
   display: inline-block;
 }
 
-.competition-title-text {
-  display: inline-block;
+#competition-title-text>h1 {
+  /* display: inline-block; */
+  font-size: 25px;
 }
 
 /* Competition Buttons (Matches/Standings/etc) */
@@ -55,11 +80,7 @@
 }
 
 .match-card {
-  /* margin-left: auto;
-  margin-right: auto;
-  max-width: 300px; */
   border: 1px solid grey;
-  /* padding: .5em .5em; */
   margin-bottom: .5em;
 }
 
