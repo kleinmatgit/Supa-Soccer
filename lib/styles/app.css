@@ -133,18 +133,37 @@
   margin: auto;
   max-width: 600px;
   border: 1px solid green;
-  padding: .5em .5em;
+  padding: .2em .2em;
 }
 
-/* #standings-row>td {
-  padding: .2em .4em;
+#standings-table-head>tr>th {
+  font-size: 12px;
+  font-weight: normal;
+  color: grey;
 }
 
-#standings-row>td>img {
-  margin-left: .1em;
-  margin-right: .1em;
+/* #standings-table-head .standings-table-toggle {
+  display: none;
+} */
+
+#standings-table-toggle {
+  display: none;
 }
 
 #standings-row .standings-row-position {
   text-align: center;
-} */
+  padding-right: 4px;
+}
+
+#standings-row-img {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#standings-row .standings-row-team {
+  padding-left: 4px;
+}
+
+/* #standings-row>td {
+  padding: .2em .4em;
+}*/
