@@ -33,18 +33,13 @@
 
 /* Competition Title */
 
-.competition-title-area {
+#competition-title-area {
   text-align: center;
-  border: 1px solid blue;
 }
 
-.competition-title-logo {
-  display: inline-block;
-}
-
-#competition-title-text>h1 {
-  /* display: inline-block; */
-  font-size: 25px;
+#competition-title-area>h1 {
+  font-size: 35px;
+  margin-top: 1px;
 }
 
 /* Competition Buttons (Matches/Standings/etc) */
