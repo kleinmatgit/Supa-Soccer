@@ -28,7 +28,7 @@
   margin: auto;
   max-width: 1200px;
   border: 1px solid red;
-  padding: .5em .5em;
+  padding: 0em 0em;
 }
 
 /* Competition Title */
@@ -57,7 +57,7 @@
 .competition-data-area {
   margin-top: 10px;
   border: 1px solid blue;
-  padding: .5em .5em;
+  padding: 0em 0em;
 }
 
 /* match area */
@@ -71,17 +71,18 @@
   margin: auto;
   max-width: 800px;
   border: 1px solid green;
-  padding: .5em .5em;
+  padding: 0em 0em;
 }
 
 .match-card {
   border: 1px solid grey;
   margin-bottom: .5em;
+  padding: .5em .5em;
 }
 
 .match-card-table {
-  display: inline-block;
-  border: 1px solid cyan;
+  /* display: inline-block;
+  border: 1px solid cyan; */
 }
 
 .match-card-teams {
@@ -133,7 +134,7 @@
   margin: auto;
   max-width: 600px;
   border: 1px solid green;
-  padding: .2em .2em;
+  padding: 0em 0em;
 }
 
 #standings-table-head>tr>th {
@@ -142,16 +143,13 @@
   color: grey;
 }
 
-/* #standings-table-head .standings-table-toggle {
-  display: none;
-} */
-
 #standings-table-toggle {
   display: none;
 }
 
 #standings-row .standings-row-position {
   text-align: center;
+  padding-left: 4px;
   padding-right: 4px;
 }
 
@@ -163,7 +161,3 @@
 #standings-row .standings-row-team {
   padding-left: 4px;
 }
-
-/* #standings-row>td {
-  padding: .2em .4em;
-}*/
