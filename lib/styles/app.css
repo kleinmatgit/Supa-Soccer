@@ -27,7 +27,7 @@
 .competition-area {
   margin: auto;
   max-width: 1200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 0em 0em;
 }
 
@@ -46,7 +46,7 @@
 .competition-buttons {
   margin: auto;
   width: 302px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .competition-buttons-single-btn {
@@ -56,7 +56,7 @@
 /* data area */
 .competition-data-area {
   margin-top: 10px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   padding: 0em 0em;
 }
 
@@ -64,36 +64,61 @@
 .match-stage-list {
   margin: auto;
   width: 180px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
-.match-data {
+/* team image css common to matches/standings.. */
+.team-img {
+  width: 24px;
+}
+
+/* match data (cards layout) */
+.cards-container {
   margin: auto;
-  max-width: 800px;
-  border: 1px solid green;
-  padding: 0em 0em;
+  max-width: 710px;
+  /* border: 1px solid blue; */
+  padding: .2em;
+}
+
+#match-card-container {
+  /* border: 1px solid green; */
+  padding: .4em .4em;
+  margin: auto;
+  max-width: 350px;
 }
 
 .match-card {
-  border: 1px solid grey;
-  margin-bottom: .5em;
-  padding: .5em .5em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em 1em;
 }
 
-.match-card-table {
-  /* display: inline-block;
-  border: 1px solid cyan; */
+.match-card-score-table {
+  max-width: 350px;
+  border-right: 1px solid grey;
+  padding-right: .5em;
 }
 
-.match-card-teams {
-  /* padding: .2em .2em; */
-  /* width: 150px; */
+.match-card-status-table {
+  max-width: 100px;
+  padding-left: .5em;
 }
 
-.match-card-scores {
-  /* padding: .2em .2em; */
-  /* text-align: right; */
-  /* width: 100px; */
+.match-card-score-table img {
+  width: 24px;
+  margin-right: .5em;
+}
+
+.match-card-score-table td {
+  text-align: left;
+}
+
+.match-card-status-table td {
+  text-align: center;
+  font-size: 12px;
+}
+
+.match-card-team {
+  width: 195px;
 }
 
 .team-winner {
@@ -104,36 +129,11 @@
   font-weight: bold;
 }
 
-.vertical-line {
-  border-left: thick solid #ff0000;
-}
-
-.match-card-details {
-  border: 1px solid cyan;
-  text-align: center;
-}
-
-.match-card-details-status {
-  /* display: inline-block;
-  text-align: center;
-  border: 1px solid darkgrey;
-  /* width: 100px; */
-}
-
-.match-card-details-date {
-  /* border: 1px solid darkgrey; */
-}
-
-/* team image css common to matches/standings.. */
-.team-img {
-  width: 24px;
-}
-
 /* standings area */
 .standings-data {
   margin: auto;
   max-width: 600px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 0em 0em;
 }
 
