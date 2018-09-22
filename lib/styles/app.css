@@ -129,6 +129,10 @@
   font-weight: bold;
 }
 
+.datetime-match-finished {
+  color: grey;
+}
+
 /* standings area */
 .standings-data {
   margin: auto;
@@ -160,4 +164,11 @@
 
 #standings-row .standings-row-team {
   padding-left: 4px;
+}
+
+/* fix issue on very small devices */
+@media (max-width: 364px) {
+  .match-card-team {
+    width: 165px;
+  }
 }
