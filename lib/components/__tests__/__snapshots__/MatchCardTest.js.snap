@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MatchCard component renders correctly 1`] = `
+<div
+  className="col-sm-6"
+  id="match-card-container"
+>
+  <div
+    className="match-card"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <div
+              className="match-card-score-table"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        className="team-img"
+                        src="images/cardiff-city.png"
+                      />
+                    </td>
+                    <td
+                      className="match-card-team"
+                    >
+                      Cardiff City
+                    </td>
+                    <td
+                      className=""
+                    >
+                      0
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        className="team-img"
+                        src="images/newcastle.png"
+                      />
+                    </td>
+                    <td
+                      className="match-card-team"
+                    >
+                      Newcastle
+                    </td>
+                    <td
+                      className=""
+                    >
+                      0
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+          <td>
+            <div
+              className="match-card-status-table"
+            >
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      FT
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className=" datetime-match-finished"
+                    >
+                      Sat, 18/7
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className=" datetime-match-finished"
+                    >
+                      19:30
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
