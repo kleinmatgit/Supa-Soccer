@@ -1,7 +1,7 @@
 {
-  "name": "react-playground",
+  "name": "supa-soccer",
   "version": "1.0.0",
-  "description": "React Playground",
+  "description": "Soccer results React application",
   "main": "lib/server.js",
   "repository": "",
   "author": "",
@@ -10,7 +10,7 @@
     "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "dev-mac": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
     "webpack": "webpack -wd",
-    "test": "jest --watch"
+    "test": "set NODE_PATH=./lib&& jest --watch"
   },
   "babel": {
     "presets": [
@@ -24,6 +24,8 @@
     "css-loader": "^1.0.0",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^6.10.3",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.2",
     "style-loader": "^0.23.0"
   },
   "dependencies": {
