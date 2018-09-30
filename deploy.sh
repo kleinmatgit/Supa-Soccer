@@ -126,14 +126,6 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
-# 5. Build Node
-if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
-  cd "$DEPLOYMENT_TARGET"
-  eval $NPM_CMD run build-node
-  exitWithMessageOnError "build-node failed"
-  cd - > /dev/null
-fi
-
 ##################################################################################################################################
 
 # Post deployment stub
