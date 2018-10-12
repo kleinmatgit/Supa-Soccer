@@ -167,6 +167,12 @@
   padding-left: 4px;
 }
 
+@media (max-width: 767px) {
+  #competition-title-area>h1 {
+    font-size: 25px;
+  }
+}
+
 /* fix issue on very small devices */
 @media (max-width: 364px) {
   .match-card-team {
