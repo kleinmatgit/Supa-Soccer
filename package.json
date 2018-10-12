@@ -7,7 +7,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "set NODE_PATH=./lib&& pm2 start lib/server.js --watch --interpreter babel-node --name appDev",
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "dev-windows": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "dev-mac": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node --name appDev",
     "webpack": "webpack -wd",
