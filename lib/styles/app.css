@@ -111,6 +111,7 @@
 
 .match-card-score-table td {
   text-align: left;
+  padding-bottom: .3em;
 }
 
 .match-card-status-table td {
@@ -132,6 +133,26 @@
 
 .datetime-match-finished {
   color: grey;
+}
+
+.status-match-live {
+  color: green;
+  font-weight: bold;
+}
+
+.status-match-half-time {
+  color: blue;
+  font-weight: bold;
+}
+
+.status-match-finished {
+  color: grey;
+  font-weight: bold;
+}
+
+.status-match-other {
+  color: orange;
+  font-weight: bold;
 }
 
 /* standings area */
